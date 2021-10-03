@@ -2,6 +2,8 @@ import React from 'react'
 
 export default function SearchBar() {
   return (
-    <div>the search bar</div>
+    <div>
+      <input type='text' placeholder='Search'/>
+    </div>
   )
 }

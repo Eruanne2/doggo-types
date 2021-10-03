@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './assets/dog-logo.svg';
-import './assets/App.css';
+import './assets/reset.css';
+import './assets/application.css';
 import Header from './Header';
 import BreedIndex from './BreedIndex';
 import ImageIndex from './ImageIndex';
