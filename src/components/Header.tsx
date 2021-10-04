@@ -1,6 +1,6 @@
 import React from 'react'
 import SearchBar from './SearchBar'
-import './assets/header.css';
+import '../assets/header.css';
 
 export default function Header() {
   return (

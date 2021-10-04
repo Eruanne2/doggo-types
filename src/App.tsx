@@ -1,9 +1,9 @@
 import React from 'react';
 import './assets/reset.css';
 import './assets/application.css';
-import Header from './Header';
-import BreedIndex from './BreedIndex';
-import ImageIndex from './ImageIndex';
+import Header from './components/Header';
+import BreedIndex from './components/BreedIndex';
+import ImageIndex from './components/ImageIndex';
 
 function App() {
   return (
@@ -14,5 +14,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;
