@@ -16,7 +16,7 @@ export default function ImageIndex(props: { selected: string}) {
 
   let imgGrid: Array<Array<string>> = [[], [], [], []];
   imgs.forEach((img, i) => imgGrid[i % 4].push(img))
-
+  
   return (
     <div className='img-index-container'>
       {

@@ -1,19 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import '../assets/breedIndex.css';
-import { getAllDogs } from '../redux/dogActions';
-import { useAppDispatch, useAppSelector } from '../redux/typedHooks';
 import loadingGif from '../assets/loading.gif'
 import ImageIndex from './ImageIndex';
 
-export default function BreedIndex() {
-  const dogs = useAppSelector(state => Object.keys(state.dogs));
-  const dispatch = useAppDispatch();
-
-  useEffect(() => {
-    dispatch(getAllDogs() as any) // better solution?
-  }, []);
-
+export default function BreedIndex(props: { dogs: Array<string>, searching: boolean }) {
   const [selected, setSelected] = useState<string | null>(null);
+
+  if (props.searching && selected !== null) setSelected(null);
+
+  const dogs = props.dogs;
 
   return (
     <div className='breed-index-container'>

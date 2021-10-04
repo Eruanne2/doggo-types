@@ -1,11 +1,11 @@
 .img-index-container {
   margin-top: 20px;
-  background-color: lightgray;
 }
 
 .img-grid {
   display: flex;
   justify-content: space-evenly;
+  background-color: lightgray;
 }
 
 .img-row {
