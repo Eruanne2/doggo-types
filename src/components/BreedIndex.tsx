@@ -6,7 +6,7 @@ import ImageIndex from './ImageIndex';
 export default function BreedIndex(props: { dogs: Array<string>, searching: boolean }) {
   const [selected, setSelected] = useState<string | null>(null);
 
-  if (props.searching && selected !== null) setSelected(null);
+  // if (props.searching && selected !== null) setSelected(null);
 
   const dogs = props.dogs;
 
