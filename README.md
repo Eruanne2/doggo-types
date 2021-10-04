@@ -2,6 +2,8 @@
 
 Welcome to my first venture into the world of TypeScript! MY main takeaway - if I continue working in TS, I'll need to disable my auto closing tag extension, because having to hit backspace 9 times every time I type `varName: Array<string>` is way too much work.
 
+Anyways, [here](https://eruanne2.github.io/doggo-types/)'s what you came for. 🐕
+
 ## Dependencies
 
 I decided to use Redux to set up a small front-end state. Although it's a small project and there are far simpler ways to keep track of the dogs, I noticed that your team uses Redux so I thought I'd give you the opportunity to review my implementation. In addition, I used `redux-thunk` to smoothly handle my API calls and `redux-logger` for testing/debugging purposes.
