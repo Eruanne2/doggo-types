@@ -10,7 +10,9 @@ Although I spent several hours reading up on `fp-ts` and learned a bit about som
 
 ## Design Decisions
 
-Originally, I divided the application into 4 main components at the top level: the `Header`, the `SearchBar`, the `BreedIndex`, and the `ImageIndex`. However, I eventually chose to combine the `SearchBar` into the `Header` and make the `ImageIndex` a child of the `BreedIndex`.
+Originally, I divided the application into 4 main components at the top level: the `Header`, the `SearchBar`, the `BreedIndex`, and the `ImageIndex`. However, the `ImageIndex` needs to know which breed is currently selected, and so it quickly made sense to place it as a child component of the `BreedIndex`.
+
+Once the app was fully functional, I looked back over it and realized that the `Header` component offered very little logic and was simply a barrier to the props that had to be threaded from the `App`, through `Header`, and down to `SearchBar`. So I moved the searchbar and its logic directly into the `Header` and removed the `SearchBar` component entirely. This made for a cleaner, simpler structure without any unnecessary prop-threading. 
 
 ## Future Improvements
 
