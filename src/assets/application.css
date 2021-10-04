@@ -2,3 +2,7 @@ body {
   margin: 3%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.loading-container img {
+  height: 150px;
+}

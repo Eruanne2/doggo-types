@@ -9,10 +9,6 @@
   color: rgb(125, 125, 125);
 }
 
-.loading-container img {
-  height: 150px;
-}
-
 li {
   display: inline-block;
   width: 21.25%;
