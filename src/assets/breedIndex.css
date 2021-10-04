@@ -1,3 +1,18 @@
+.breed-index-container {
+  min-height: 150px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(125, 125, 125);
+}
+
+.loading-container img {
+  height: 150px;
+}
+
 li {
   display: inline-block;
   width: 21.25%;
@@ -9,8 +24,15 @@ li {
   border-radius: 3px;
   list-style: none;
   text-align: center;
+  cursor: pointer;
 }
 
 li:nth-child(4n) {
   margin-right: 0;
+}
+
+li.selected {
+  background: rgb(187,124,210);
+  background: linear-gradient(90deg, rgba(187,124,210,1) 0%, rgba(52,59,230,1) 100%);
+  color: white;
 }

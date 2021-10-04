@@ -3,7 +3,7 @@ import { AppDispatchType } from './store';
 
 // kinds of actions
 export const RECEIVE_ALL_DOGS = 'RECEIVE_ALL_DOGS';
-export const RECEIVE_BREED_IMAGES = 'RECEIVE_BREED_NAMES';
+export const RECEIVE_BREED_IMAGES = 'RECEIVE_BREED_IMAGES';
 
 // define payload type (more specific than object!)
 

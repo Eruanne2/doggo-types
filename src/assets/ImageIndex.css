@@ -1,0 +1,13 @@
+.img-grid {
+  /* display: flex;
+  justify-content: space-between; */
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-grid img {
+  /* width: 25%; */
+}
