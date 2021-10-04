@@ -21,8 +21,7 @@ function App() {
   };
 
   const dogs = allDogs.filter((breed: string) => breed.includes(searchVal));
-  console.log(dogs);
-  console.log(allDogs);
+
   return (
     <div className="App">
       <Header updateSearch={updateSearch}/>
